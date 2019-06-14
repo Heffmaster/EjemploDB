@@ -53,9 +53,9 @@ public class EjemploDB {
             String q1 = "insert into TEMP_JENKINS values('" +id+ "','" +email+ "')"; 
             int x = stmt.executeUpdate(q1); 
             if (x > 0)             
-                System.out.println("Successfully Inserted");             
+                System.out.println("Se actualizó registro correctamente");             
             else            
-                System.out.println("Insert Failed"); 
+                System.out.println("Falló la inserción"); 
               
             con.close(); 
         } 
@@ -124,9 +124,9 @@ public class EjemploDB {
             int x = stmt.executeUpdate(q1); 
               
             if (x > 0)             
-                System.out.println("Descripcion Successfully Updated");             
+                System.out.println("Se actualizo correctamente");             
             else            
-                System.out.println("ERROR OCCURED :("); 
+                System.out.println("Ocurrio un error"); 
               
             con.close(); 
         } 
@@ -155,9 +155,8 @@ public class EjemploDB {
           // Updating database 
             String q1 = "Delete from  TEMP_JENKINS"; 
             int x = stmt.executeUpdate(q1); 
-                System.out.println("EL VALOR DE X ES :" +x); 
             if (x > 0)             
-                System.out.println("Successfully Deleted");             
+                System.out.println("Se eliminaron todos los registros");             
             else            
                 System.out.println("No hay datos para eliminar"); 
              
