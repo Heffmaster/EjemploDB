@@ -19,6 +19,7 @@ public class EjemploDB {
         // TODO code application logic here
         try
         { 
+            System.out.println("Se versiona 1.0.0.0001");    
             Insert();
             Update();
             Select();
